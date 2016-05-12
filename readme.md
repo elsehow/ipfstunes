@@ -5,7 +5,7 @@ WIP
 ## developing
 
 ```sh
-npm isntall
+npm install 
 npm start
 ```
 
