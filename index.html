@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Example App</title>
+</head>
+<body>
+  helloooooooooo owrld
+
+
+<script>
+document.addEventListener('dragover',function(event){
+  event.preventDefault();
+  return false;
+},false);
+
+document.addEventListener('drop',function(event){
+  event.preventDefault();
+  return false;
+},false);
+
+document.ondragover = () => {
+  return false;
+};
+document.ondragleave = document.ondragend = () => {
+  return false;
+};
+document.ondrop = (e) => {
+  e.preventDefault();
+  const file = e.dataTransfer.files[0];
+  console.log('File you dragged here is', file.path);
+  return false;
+};
+</script>
+</body>
+</html>
