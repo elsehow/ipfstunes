@@ -4,7 +4,6 @@
   "description": "example menubar electron app",
   "dependencies": {
     "electron-reload": "^0.3.0",
-    "ipfstunes-core": "file:lib/ipfstunes-core",
     "kefir": "^3.2.2",
     "menubar": "*"
   },
