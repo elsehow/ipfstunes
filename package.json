@@ -4,6 +4,8 @@
   "description": "example menubar electron app",
   "dependencies": {
     "electron-reload": "^0.3.0",
+    "ipfstunes-core": "file:lib/ipfstunes-core",
+    "kefir": "^3.2.2",
     "menubar": "*"
   },
   "devDependencies": {
@@ -14,7 +16,6 @@
   "main": "main.js",
   "scripts": {
     "build": "electron-packager . Example --platform=darwin --arch=x64 --version=0.36.0 --icon=Icon.icns",
-    "start": "electron .",
-    "watch": "runwatch **/*.js -r \"npm start\""
+    "start": "electron --harmony_destructuring ."
   }
 }
